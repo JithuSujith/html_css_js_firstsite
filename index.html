@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!--BOOTSRAP LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="./index.css">
+
+  </head>
+  <body>
+    <header>
+    <!-- Navbar 1 -->
+    <nav class="navbar nav1" data-bs-theme="dark">
+        <div class="container-fluid justify-content-center fs-4">
+            <span class="navbar-text">
+                <a href="#">Sign up and get 20% for your order</a>
+            </span>
+        </div>
+    </nav>
+</header>
+
+<!-- Navbar 2 -->
+<div class="container-fluid sticky-top nav2">
+    <div class="row justify-content-center align-items-center text-white">
+
+        <!-- LOGO -->
+        <div class="col-12 col-md-4">
+            <img src="./media/rocket-black.png"
+                 width="60"
+                 alt="Logo"
+                 class="logo">
+        </div>
+
+        <!-- HOME + SHOP -->
+        <div class="col-12 col-md-4 link">
+            <ul class="navbar-nav flex-row justify-content-center gap-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./shop.html">Shop</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="col-12 col-md-4">
+            <form class="d-flex">
+                <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search" data-bs-theme="dark">
+
+                <button class="btn btn-outline-success me-2">
+                    Search
+                </button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+    <main>
+        <section class="container hero d-flex align-items-center">
+            <div class="row w-100 d-flex justify-content-center align-items-center ">
+                <div class="col-12 col-md-6 d-flex justify-content-center flex-column ">
+                    <h1 class="display-4 head">Where Timeless Vintage Meets Modern Style</h1>
+                    <button type="button" class="btn btn-dark align-self-center mt-5">Shop Now</button>
+                    </div>
+            </div>
+        </section>
+        <section>
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row text-white count w-100 d-flex justify-content-center align-items-center text-center">
+                    <article class="col-12 col-md-4 ">
+                        <p class="fs-3"><span class="fs-1 fw-5 text-danger me-1" id="numberOne">0</span>Customers</p>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <p class="fs-3"><span class="fs-1 fw-5 text-danger me-1" id="numberTwo">0</span>Sold Products</p>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <p class="fs-3"><span class="fs-1 fw-3 text-danger me-1" id="numberThree">0</span>Review</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    
+        <!--Review-->
+
+        <section class="container-fluid d-flex justify-content-center text-center text-white w-100">
+    <div id="carouselStacked" class="carousel slide">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <button class="btn-icon btn-sm" type="button"
+                    data-bs-target="#carouselStacked" data-bs-slide="prev">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="btn-icon btn-sm" type="button"
+                    data-bs-target="#carouselStacked" data-bs-slide="next">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <section class="container reviewcard">
+            <div class="carousel-inner rounded-5">
+                <h5 class="m-0">REVIEWS</h5>
+
+                <!-- Your original review stays in HTML -->
+                <div class="carousel-item active">
+                    <p class="fs-4 mb-0 mt-3">Gianluca De caro</p>
+                    <p class="fs-5 mt-0">"Ottima qualita"</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</section>
+    
+       
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

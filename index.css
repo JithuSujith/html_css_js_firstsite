@@ -1,0 +1,116 @@
+*{
+    font-family: "Nunito", sans-serif;
+    
+}
+
+body{
+    background-color: black;
+}
+
+:root{
+    --dark-custom: #1d2424;
+    --gret-custom: rgb(132,130,128);
+    --accent-custom: #E31A0B;
+    --white-custom: rgb(234,238,242);
+}
+
+.nav1{
+    background-color: rgb(3, 68, 12);
+    color: white;
+}
+.nav2{
+    background-color: transparent;
+}
+
+.hero{
+    min-height: 70vh;
+    margin-top: 55px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(107, 197, 126, 0.6)),url(./media/HD-wallpaper-person-using-laptop-computer.jpg);
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.imagehero{
+    height: 700px;
+    width: 1300px;
+}
+
+.head{
+    color:white;
+    -webkit-text-stroke:2px green;
+    font-size: 60;
+    font-weight: 900;
+}
+
+.count{
+    background-color:rgb(3, 68, 12); 
+    min-height: 25vh;
+    margin-top: 100px;
+    width:70%
+}
+
+#carouselStacked{
+    background-color:rgb(3, 68, 12); 
+    min-height: 25vh;
+    margin-top: 100px;
+    width:70%
+}
+
+.reviewcard{
+    min-height: 30vh;
+    background-color:rgb(3, 68, 12);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.reviewcard h5{
+    font-size: xx-large;
+    color: red;
+    font-weight: bolder;
+}
+
+/* Remove Bootstrap's default arrow */
+.accordion-button::after {
+    display: none !important;
+    background-image: none !important;
+}
+
+/* Remove your custom SVG arrow */
+.accordion-icon {
+    display: none !important;
+}
+
+.accordions{
+    background-color: white;
+    color: black;
+}
+
+
+#cardWrapper {
+    min-height: 75vh;
+    max-height: 75vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
+}
+
+.card-custom {
+    min-height: 200px;
+    width: calc(33.333% - 10px);
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
